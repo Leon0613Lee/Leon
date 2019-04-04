@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>HONDA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="banana/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<link rel="stylesheet" type="text/css" href="exam.css">
 <body>
-<form>
-	<label>First Name: </label>
-	<input type="text" name="banana">
-	(max 30 characters)<br>
-	<label>Last Name: </label>
-	<input type="text" name="banana">
-	(max 30 characters)<br>
-	<label>Gender: </label>
-	Male<input type="radio" name=""> 
-	Female<input type="radio" name=""><br>
-	<label>Hobbies:</label>
-	Drawing<input type="radio" name="">
-	Singing<input type="radio" name="">
-	Others<input type="radio" name=""><input type="text" name="">
-</form>
-<br><br>
 
-<table border="5" cellspacing="5" width="200" style="border-color: #000000" ">
-	<tr>
-		<td><a style="visibility: hidden;">lemon</a></td>
-		<td style="visibility: hidden;"><a style="visibility: hidden;">lemon</a></td>
-		<td style="visibility: hidden;"><a style="visibility: hidden;">lemon</a></td>
-	</tr>
-	<tr>
-		<td style="visibility: hidden;"></td>
-		<td>Show</td>
-		<td style="visibility: hidden;"></td>
-	</tr>
-	<tr>
-		<td rowspan="2">Time</td>
-		<td>Time</td>
-		<td rowspan="2">Time</td>
-	</tr>
-	<tr>
-		<td>Happy</td>
-	</tr>
-	<tr>
-		<td style="visibility: hidden;" rowspan="2"></td>
-		<td>time</td>
-		<td style="visibility: hidden;"></td>
-	</tr>
-	<tr>
-		<td style="visibility: hidden;"></td>
-		<td><a style="visibility: hidden;">lemon</a></td>
-	</tr>
-</table>
-<br><br>
-<h1>PART B</h1>
-<br>
-<form class="form">
-<div class="insideform">
-	<a class="kawaii">Get In Touch!</a><br>
-    <a class="ff">Fill out our super swanky HTML 5 contact from below to get in touch with us!<br>
-    Please provide as much information as possible for us to help you with your <br>
-    enquiry :)</a><br><br>
-    <label>Name: <a class="dot">*</a></label><br>
-    <input type="text" name="" class="banana"><br><br>
-    <label>Email Address: <a class="dot">*</a></label><br>
-    <input type="email" placeholder="johndoe@example.com" class="banana"><br><br>
-    <label>Telephone: </label><br>
-    <input type="number" name="" class="banana"><br><br>
-    <label>Endquiry:</label><br>
-    <select class="radio">
-    	<option>General</option>
-    </select><br><br>
-    <label>Message: <a class="dot">*</a></label><br>
-    <textarea cols="76" rows="8" placeholder="Your message must be greater than 20 charcters"></textarea><br><br>
-    <a class="dot">*</a><a class="ff"> indicates a required field</a>
-    <input type="submit" value="Holla!" class="potato">
+<div class="sidenav">
+  <a href="#">HOME</a>
+  <a href="#">CARS</a>
+  <a href="#">CLIENTS</a>
+  <a href="#">CONTACT</a>
 </div>
-</form>
+
+<div id="main">
+  <p>HONDA <a onclick="document.getElementById('id01').style.display='block'" class="sign">SIGN UP</a></p>
+  <hr>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="banana/errr.jpg" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Comfirm Password</b></label>
+      <input type="password" placeholder="Comfirm Password" name="psw" required>
+        
+      <button type="submit" class="submit">Sign Up</button>
+      <input type="checkbox" checked="checked"> Agree.
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<img src="banana/bnrL_4160825.jpg">
+</div>
 
 </body>
-</html>
+</html> 
