@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anime & Gamers Life</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body background="css/47305328-sword-art-online-wallpaper.jpg" style="background-size: 100%;overflow-x: hidden;">
+<header id="pc">
+	<nav class="topnav">
+		<ul>
+		    <li><a href="Anime.html" style="margin-left:15.5%;">Anime</a></li>
+	     	<li><a href="Game.html" style="color: black;background-color: red;">Game</a></li>
+	     	<li><a href="index.html" style="margin-top: -10px;"><img src="css/Lemon-PNG-Clipart.png" style="width: 50px;height: 50px; max-height: 50px;overflow:hidden;"></a></li>
+		    <li><a href="Potato.html">Potato</a></li>
+		    <li><a href="About.html">About</a></li>
+		</ul>
+	</nav>
+	<br>
+	<div class="title"><img src="css/potato.jpg"></div>
+	<hr>
+</header>
+<header>
+<nav class="phone" id="phone">
+	<div class="topnav2">
+		<ul>
+			<li><a><span onclick="openNav()">&#9776;</span></a></li>
+			<li><a href="index.html" style="float: right; margin-right: 10%;margin-top: 0;"><img src="css/Lemon-PNG-Clipart.png" style="width: 50px;opacity: 100%;"></a></li>
+		</ul>
+	</div>
+	<div id="side" class="sidee">
+	    <a href="javascript:void(0)" onclick="closeNav()" style="float: left;position: absolute;margin-left: 5%;padding-left: 0;color: #979191;margin-top: -2.6%">&times;</a>
+	    <a href="index.html" style="margin-left: 33%;margin-top: -3%;"><img src="css/Lemon-PNG-Clipart.png" style="width: 50px;"></a>
+	    <a href="Anime.html">Anime</a>
+	    <a href="Game.html">Game</a>
+	    <a href="Potato.html">Potato</a>
+	    <a href="About.html">About</a>
+	</div>
+</nav>
+</header>
+<script>
+	function openNav(){	
+		document.getElementById("side").style.height="100%";
+		document.getElementById("side").style.visibility="visible;"
+	}
+	function closeNav(){
+		document.getElementById("side").style.height="0";
+		document.getElementById("side").style.visibility="hidden;"
+	}
+</script>
+
+<div class="topic">Game List</div>  
+
+<nav  id="animelist1">
+    <button class="accordion">Recommended</button>
+    <div class="animelist1">
+	    <a href="NierAutomata.html"><img src="Game/NIER/Nier_Automata_cover_art.jpg"><p>NieR:Automata</p><p class="hidden">x</p></a>		
+    </div>
+
+    <button class="firstbtnlist">Online</button>
+    <div class="animelist1"  style="display: block;">
+	    <a href="LeagueofLegends.html"><img src="Game/LOL/League_of_Legends_logo.png"><p>League of Legends</p><p class="hidden">x</p></a>		
+    </div>
+    <button class="accordion">Metal Gear Series</button>
+    <div class="animelist1">
+	    <a href="MetalGearSolidVThePhantomPain.html"><img src="Game/MGSV/MGSVTPP/Metal_Gear_Solid_V_The_Phantom_Pain_cover.png"><p>MGS V:</p><p>The Phantom Pain</p></a>			
+	    <a href="MetalGearSolidVGroundZeroes.html"><img src="Game/MGSV/MGSVGZ/MGSV_Ground_Zeroes_boxart.jpg"><p>MGS V:</p><p>Ground Zeores</p></a>		
+    </div>
+    <button class="accordion">Grand Theft Auto Series</button>
+    <div class="animelist1">
+	    <a href="GTAV.html"><img src="Game/GTA/GTAV/GTA_V_Logo.jpg"><p>Grand Theft Auto</p><p>V</p></a>		
+    </div>
+    <button class="accordion">Far Cry Series</button>
+    <div class="animelist1">
+	    <a href="Farcry4.html"><img src="Game/FarCry/FarCry4/FC4_KEYART_PACK-610x722.jpg"><p>Far Cry 4</p><p class="hidden">x</p></a>		
+    </div>
+    <button class="accordion">Need For Speed Series</button>
+    <div class="animelist1">
+	    <a href="NeedforspeedRivals.html"><img src="Game/NFS/NFSRivals/Need_for_Speed_Rivals_cover.jpg"><p>Need For Speed :</p><p>Rivals</p></a>		
+    </div>
+    <button class="accordion">Assassin's Creed Series</button>
+    <div class="animelist1">
+	    <a href="AssassinUnity.html"><img src="Game/Assassin/AssassinUnity/Acunity.jpg"><p>Assassin's Creed</p><p>Unity</p></a>		
+    </div>
+    <button class="accordion">Call of Duty Series</button>
+    <div class="animelist1">
+	    <a href="CallofdutyAdvancedWarfare.html"><img src="Game/COD/CODAW/Advanced_Warfare.jpg"><p>Call of Duty :</p><p>Advanced Warfare</p></a>	
+    </div>
+    <button class="accordion">Battlefield Series</button>
+    <div class="animelist1">
+	    <a href="Battlefield4.html"><img src="Game/Battlefield/Battlefield4/1453980047g7tg74JEQj.jpg"><p>Battlefield 4</p><p class="hidden">x</p></a>				
+    </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+</nav>
+
+<nav class="animelistphone" id="animelist2">
+	<button class="accordion2">Recommended</button>
+    <div class="animelist2">
+        <a href="NierAutomata.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/NIER/Nier_Automata_cover_art.jpg"></td>
+        		    <td class="animelistword">NieR:Automata</td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+    <button class="firstbtnlist">Online</button>
+    <div class="animelist2" style="display: block;">
+        <a href="LeagueofLegends.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/LOL/League_of_Legends_logo.png"></td>
+        		    <td class="animelistword">League of Legends</td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+    <button class="accordion2">Metal Gear Series</button>
+    <div class="animelist2">
+        <a href="MetalGearSolidVThePhantomPain.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/MGSV/MGSVTPP/Metal_Gear_Solid_V_The_Phantom_Pain_cover.png"></td>
+        		    <td class="animelistword">Metal Gear Solid V:The Phantom Pain<br></td>
+        	    </tr>
+            </table>
+        </a>
+        <a href="MetalGearSolidVGroundZeroes.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/MGSV/MGSVGZ/MGSV_Ground_Zeroes_boxart.jpg"></td>
+        		    <td class="animelistword">Metal Gear Solid V:Ground Zeroes<br></td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+    <button class="accordion2">Grand Theft Auto Series</button>
+    <div class="animelist2">
+        <a href="GTAV.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/GTA/GTAV/GTA_V_Logo.jpg"></td>
+        		    <td class="animelistword">Grand Theft Auto V</td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+    <button class="accordion2">Far Cry Series</button>
+    <div class="animelist2">
+        <a href="Farcry4.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/FarCry/FarCry4/FC4_KEYART_PACK-610x722.jpg"></td>
+        		    <td class="animelistword">Far Cry 4</td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+    <button class="accordion2">Need For Speed Series</button>
+    <div class="animelist2">
+        <a href="NeedforspeedRivals.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/NFS/NFSRivals/Need_for_Speed_Rivals_cover.jpg"></td>
+        		    <td class="animelistword">Need For Speed:Rivals</td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+    <button class="accordion2">Assassin's Creed Series</button>
+    <div class="animelist2">
+        <a href="AssassinUnity.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/Assassin/AssassinUnity/Acunity.jpg"></td>
+        		    <td class="animelistword">Assassin's Creed Unity<br></td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+    <button class="accordion2">Call of Duty Series</button>
+    <div class="animelist2">
+        <a href="CallofdutyAdvancedWarfare.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/COD/CODAW/Advanced_Warfare.jpg"></td>
+        		    <td class="animelistword">Call Of Duty:Advanced Warfare<br></td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+    <button class="accordion2">Battlefield Series</button>
+    <div class="animelist2">
+        <a href="Battlefield4.html">
+            <table>
+        	    <tr>
+        		    <td style="width: 30%;"><img src="Game/Battlefield/Battlefield4/1453980047g7tg74JEQj.jpg"></td>
+        		    <td class="animelistword">Battlefield 4<br></td>
+        	    </tr>
+            </table>
+        </a>
+    </div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+<script>
+var acc = document.getElementsByClassName("firstbtnlist");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+</nav>
+
+
+<footer>
+	<hr>
+	<a>Copyright &copy; Leon 2017</a>
+</footer>
+<nav>
+    <table class="topic2" id="topic2">
+        <tr>
+            <td style="width: 100%;margin: auto;">
+	            <img src="css/potato.jpg">
+            </td>
+        </tr>
+	    <tr>
+	    	<td><hr></td>
+	    </tr>
+	    <tr>
+	    	<td><a>Copyright &copy; Leon 2017</a></td>
+	    </tr>
+	</div>
+</nav>
+</body>
+</html>
