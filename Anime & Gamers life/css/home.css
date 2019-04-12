@@ -1,0 +1,616 @@
+/*navigation bar pc*/
+.topnav ul{
+	list-style-type: none;
+	width: 700px;
+	margin: auto;
+	background-color: black;
+	margin-top: -1%;
+	overflow: hidden;
+	border-radius: 0 0 50px 50px;
+}
+.topnav ul li a{
+	display: block;
+	float: left;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 1em;
+	color: white;
+	margin-top: 10px;
+	max-height: 40px;
+	overflow: hidden;
+}
+.topnav ul li a:hover{
+	background-color: red;
+	color: black;
+	transition: 0.8s;
+}
+.title{
+	width: 800px;
+	margin: auto;
+}
+.title img{
+	width: 100%;
+	margin: auto;
+}
+
+/*navigation bar phone*/
+.topnav2 ul{
+	list-style-type: none;
+	width: 104%;
+    margin-left: -2%;
+	margin-top: -2%;
+	background-color: black;
+	padding: 0;
+	overflow: hidden;
+	height: 50px;
+	opacity: 0.8;
+}
+.topnav2 ul li a{
+	float: left;
+	display: block;
+	margin-top: 15px;
+	color: white;
+	margin-left: 6%;
+}
+.topnav2 ul:hover{
+	opacity: 1;
+	transition: 0.8s;
+}
+.sidee{
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	transition: 0.8s;
+}
+.sidee a {
+    padding-left: 10%;
+    padding-top: 5%;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    display: block;
+}
+.sidee a:hover, .offcanvas a:focus{
+    color: red;
+    transition: 0.8s;
+}
+
+.phone{
+	visibility: hidden;
+	position: fixed;
+}
+
+/*Giant topic*/
+.topic{
+	font-size: 2.5em;
+	color: #808080;
+	text-shadow: 4px 3px black;
+	padding-left: 5%;
+	font-weight: bold;
+}
+
+/*word*/
+#link{
+	color: #7FB3D5;
+    text-decoration: none;
+    font-size: 1em;
+}
+.word{
+	color: #EBF5FB;
+	font-size: 1em;
+}
+.background{
+	background-color: #154360;
+	margin: 2%;
+	padding: 2%;
+	border-radius: 15px 15px 15px 15px;
+}
+
+/*About*/
+.aboutimage{
+	width: 50%;
+}
+
+/*potato*/
+.big{
+	color: #7FB3D5;
+	font-size: 1.2em;
+}
+.small{
+	color: #EBF5FB;
+	font-size: 1em;
+}
+.potatomainimg{
+	width: 30%;
+	padding-left: 5%;
+}
+.potatoimg{
+	float: right;
+	width: 20%;
+	height: 100%;
+}
+
+/*copyright*/
+footer{
+	text-align: center;
+	font-size: 1em;
+	color: white;
+}
+.topic2{
+	background-color: black;
+	width: 104%;
+	margin-left: -2%;
+	bottom: 0;
+	visibility: hidden;
+	position: fixed;
+}
+.topic2 img{
+	width: 60%;
+	margin-left: 20%;
+	padding-top: 5%;
+}
+.topic2 tr td a{
+	color: white;
+	text-align: center;
+	font-size: 0.7em;
+	float: right;
+	padding-right: 5%;
+	padding-bottom: 1%;
+}
+
+/*Accordion*/
+button.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+    text-decoration: underline;
+    transition: 0.8s;
+}
+button.accordion.active, button.accordion:active{
+	color: black;
+	background-color: red;
+	transition: 0.8;
+}
+button.firstbtnlist{
+	background-color: red;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    font-weight: bolder;
+    transition: 0.4s;
+    text-decoration: underline;
+}
+button.firstbtnlist.active, button.firstbtnlist:hover {
+    text-decoration: none;
+    transition: 0.8s;
+}
+button.firstbtnlist.active, button.firstbtnlist:active{
+	color: white;
+	background-color: black;
+	transition: 0.8;
+}
+
+button.accordion2 {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    margin-left: -1%;
+    width: 102%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    font-weight: bolder;
+    transition: 0.4s;
+    overflow-x: hidden;
+}
+button.accordion2.active, button.accordion2:hover {
+    text-decoration: underline;
+    transition: 0.8s;
+}
+button.accordion2.active, button.accordion2:active{
+	color: black;
+	background-color: red;
+	transition: 0.8;
+}
+
+/*Animelist*/
+.animelist1 {
+	padding: 0 20px;
+	display: none;
+    background-color: #154360;
+    padding-top: 1%;
+}
+.animelist1 a:link, a:visited{
+	background-color: #2471A3;
+	color: #EBF5FB;
+	padding: 14px 19px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: auto;
+}
+.animelist1 a:hover, a:active{
+	background-color: black;
+	color: red;
+	transition: 0.8s;
+}
+.animelist1 img{
+	width: 200px;
+	height: 275px;
+}
+
+/*animelist phone*/
+.animelistphone{
+	visibility: hidden;
+	position: fixed;
+}
+.animelist2 {
+	padding: 0 20px;
+	display: none;
+    background-color: #154360;
+    width: 100%;
+    margin-left: -%;
+    overflow: hidden;
+}
+.animelist2 a{
+	margin: auto;
+	width: 80%;
+}
+.animelist2 a table tr td{
+	vertical-align: top;
+}
+.animelist2 a:link, a:visited{
+	background-color: #2471A3;
+	color: #EBF5FB;
+	padding: 14px;
+	text-decoration: none;
+	display: inline-block;
+	margin: auto;
+	margin-top: 1%;
+}
+.animelist2 a:hover, a:active{
+	background-color: black;
+	color: red;
+	transition: 0.8s;
+}
+.animelist2 a table tr td img{
+	width: 100%;
+}
+.animelistword{
+	width: 100%;
+	padding-left: 5%;
+	font-size: 1em;
+}
+.animelistword p{
+	font-weight: lighter;
+	color: white;
+	font-size: 0.9em;
+}
+
+/*invisible*/
+.hidden{
+	visibility: hidden;
+}
+
+/*Anime Type*/
+#animetypetable tr td img{
+	width: 200px;
+	height: 275px;
+}
+.animetype{
+	background-color: #154360;
+	margin: 2%;
+	padding: 2%;
+	border-radius: 15px 15px 15px 15px;
+}
+.animetype table tr td{
+	vertical-align: top;
+}
+.animetype1{
+	width: 250px;
+}
+.animetype2{
+	width: 10%;
+	font-size: 1em;
+	font-weight: bolder;
+	color: #7FB3D5;
+}
+.animetype3{
+	font-size: 1em;
+	font-weight: bolder;
+	color: #7FB3D5;
+}
+.animetype4{
+	color: #EBF5FB;
+	font-size: 1em;
+}
+.animetype5{
+	color: #7FB3D5;
+	font-size: 1em;
+	font-weight: bolder;
+}
+.animetype6{
+	color: #EBF5FB;
+	font-size: 1em;
+	font-weight: normal;
+}
+#animelink{
+	width: 100px;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding:10px 0 10px 0;
+	font-size: 1em;
+}
+#animelink:hover{
+	color: black;
+	background-color: red;
+	transition: 0.8s;
+}
+.animemusic h1{
+	font-size:1.3em;
+	color:  #7FB3D5;
+	font-weight: bolder;
+}
+.animemusic h2{
+	font-size: 1.2em;
+	color: #7FB3D5;
+	font-weight: normal;
+	line-height: 1;
+}
+.animemusic a{
+	color: #EBF5FB;
+	font-size: 1em;
+}
+.deviceanime{
+	width: 80%;
+	margin: auto;
+	visibility: hidden;
+	position: fixed;
+}
+.deviceanime img{
+	width: 80%;
+	margin-left: 10%;
+}
+.deviceanime h4{
+	font-size: 0.9em;
+	color:  #7FB3D5;
+}
+.deviceanime p{
+	font-size: 0.9em;
+	color: #EBF5FB;
+}
+.gallery{
+	background-color: #154360;
+	margin: 2%;
+	padding: 2%;
+	border-radius: 15px 15px 15px 15px;
+}
+.gallery img{
+	height: 300px;
+	padding: 0.1%;
+}
+
+/*slideshow*/
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s;
+}
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*Anime main page*/
+.animerecommended{
+	width: 100%;
+}
+.background h1{
+	font-size: 1.2em;
+	color: #7FB3D5;
+}
+.animerecommended table tr td a img{
+	width: 200px;
+	height: 275px;
+}
+.animerecommended a:link, a:visited{
+	background-color: #2471A3;
+	color: #EBF5FB;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+.animerecommended a:hover, a:active{
+	background-color: black;
+	color: red;
+	transition: 0.8s;
+}
+.animerecommended{
+	background-color: #154360;
+	margin: auto;
+	overflow-x: auto;
+}
+.animerecommended2{
+	visibility: hidden;
+	position: fixed;
+}
+.background h2{
+	font-size: 1em;
+	color: #EBF5FB;
+	font-weight: normal;
+}
+.requirements h4{
+	font-size: 0.9em;
+	color:  #7FB3D5;
+}
+.requirements p{
+	font-size: 0.9em;
+	color: #EBF5FB;
+}
+.topicphone{
+	visibility: hidden;
+	position: fixed;
+	font-size: 3em;
+	text-align: center;
+	padding-left: 0;
+	width: 100%;
+	color: #808080;
+	text-shadow: 4px 3px black;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 830px){
+	#pc{
+		visibility: hidden;
+		position: fixed;
+	}
+	#phone{
+		visibility: visible;
+		position: relative;
+	}
+	.background{
+		padding: 5%;
+	}
+	.aboutimage{
+		width: 80%;
+	}
+	.potatomainimg{
+		width: 100%;
+		padding-left: 0;
+	}
+	.potatoimg{
+		width: 100%;
+	}
+	.topic{
+		font-size: 3em;
+		text-align: center;
+		padding-left: 0;
+		width: 100%;
+	}
+	#animelist1{
+		visibility: hidden;
+		position: fixed;
+	}
+	#animelist2{
+		visibility: visible;
+		position: relative;
+		overflow-x: hidden;
+	}
+	#animetypetable{
+		visibility: hidden;
+		position: fixed;
+	}
+	#animetype{
+		width: 100%;
+		margin: auto;
+		margin-left: -2%;
+		overflow-x: hidden;
+		border-radius: 0 0 0 0 ;
+	}
+	#animemusic{
+		margin: auto;
+		width: 80%;
+		overflow-x: hidden;
+	}
+	#animemusic audio{
+		width: 100%;
+	}
+	#animemusic h1{
+		font-size: 1em;
+	}
+	#animemusic h2{
+		font-size: 1em;
+	}
+	#animemusic a{
+		font-size: 0.9;
+		font-weight: lighter;
+	}
+	.gallery img{
+		width: 100%;
+		height: 100%;
+	}
+	.animerecommended{
+    	background-color: #154360;
+    	margin: auto;
+    	overflow-x: auto;
+    }
+	.animerecommended table tr td a img{
+    	width: 100px;
+	    height: 150px;
+    }
+    .animerecommended a:link, a:visited{
+    	background-color: #2471A3;
+    	color: #EBF5FB;
+    	padding: 20px 35px;	
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block; 
+    	font-size: 0.7em;
+    }
+    .animerecommended a:hover, a:active{
+    	background-color: black;
+    	color: red;
+    	transition: 0.8s;
+    }
+    #animerecommended1{
+    	visibility: hidden;
+    	position: fixed;
+    }
+    #animerecommended2{
+    	visibility: visible;
+    	position: relative;
+    }
+    #topic2{
+    	visibility: visible;
+    	position: relative;
+    }
+    footer{
+    	visibility: hidden;
+    	position: fixed;
+    }
+    .topicphone{
+    	visibility: visible;
+    	position: relative;
+    }
+}
