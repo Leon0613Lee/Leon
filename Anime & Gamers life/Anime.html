@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anime & Gamers Life - Anime</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body background="css/47305328-sword-art-online-wallpaper.jpg" style="background-size: 100%;overflow-x: hidden;">
+<header id="pc">
+	<nav class="topnav">
+		<ul>
+		    <li><a href="Anime.html" style="margin-left:15.5%;color: black;background-color: red;">Anime</a></li>
+	     	<li><a href="Game.html">Game</a></li>
+	     	<li><a href="index.html" style="margin-top: -10px;"><img src="css/Lemon-PNG-Clipart.png" style="width: 50px;height: 50px; max-height: 50px;overflow:hidden;"></a></li>
+		    <li><a href="Potato.html">Potato</a></li>
+		    <li><a href="About.html">About</a></li>
+		</ul>
+	</nav>
+	<br>
+	<div class="title"><img src="css/potato.jpg"></div>
+	<hr>
+</header>
+<header>
+<nav class="phone" id="phone">
+	<div class="topnav2">
+		<ul>
+			<li><a><span onclick="openNav()">&#9776;</span></a></li>
+			<li><a href="index.html" style="float: right; margin-right: 10%;margin-top: 0;"><img src="css/Lemon-PNG-Clipart.png" style="width: 50px;opacity: 100%;"></a></li>
+		</ul>
+	</div>
+	<div id="side" class="sidee">
+	    <a href="javascript:void(0)" onclick="closeNav()" style="float: left;position: absolute;margin-left: 5%;padding-left: 0;color: #979191;margin-top: -2.6%">&times;</a>
+	    <a href="index.html" style="margin-left: 33%;margin-top: -3%;"><img src="css/Lemon-PNG-Clipart.png" style="width: 50px;"></a>
+	    <a href="Anime.html">Anime</a>
+	    <a href="Game.html">Game</a>
+	    <a href="Potato.html">Potato</a>
+	    <a href="About.html">About</a>
+	</div>
+</nav>
+</header>
+<script>
+	function openNav(){	
+		document.getElementById("side").style.height="100%";
+		document.getElementById("side").style.visibility="visible;"
+	}
+	function closeNav(){
+		document.getElementById("side").style.height="0";
+		document.getElementById("side").style.visibility="hidden;"
+	}
+</script>
+
+<div class="topic">ANIME</div>
+<nav class="background">
+	<div class="slideshow-container" id="slide">
+
+    <div class="mySlides fade">
+      <a href="Animelist.html"><img src="Anime/14480538_1478013948881257_4115824268721700473_o.jpg" style="width:100%"></a>
+    </div>
+
+    <div class="mySlides fade">
+      <a href="LoliconClub.html"><img src="Anime/14707820_1044508238999492_673609612578085617_o.jpg" style="width:100%"></a>
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center" id="dot">
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}    
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000);
+    }
+    </script>
+<hr>
+    <h1>Recommended</h1>
+    <div class="animerecommended">
+    	<table id="animerecommended1">
+    		<tr>
+    		    <td><a href="Toradora.html"><img src="Anime/Anime List/Toradora/22128 (1).jpg"><p>Toradora!</p><p class="hidden">x</p></a></td>
+    			<td><a href="Zeronotsukaima.html"><img src="Anime/Anime List/Zero no Tsukaima/20680.jpg"><p>Zero no Tsukaima</p><p class="hidden">x</p></a></td>
+    			<td><a href="GuiltyCrown.html"><img src="Anime/Anime List/GuiltyCrown/Guilty-Crown-276.jpg" alt="GuiltyCrown"><p>Guilty Crown</p><p class="hidden">x</p></a></td>
+    			<td><a href="Anohana.html"><img src="Anime/Anime List/Anohana/oth60229013883515c3e591e47e8bb7b84c47c7666580010.jpg" alt="anohana"><p>Anohana</p><p class="hidden">x</p></a></td>
+    			<td><a href="Worldend.html"><img src="Anime/Anime List/Worldend/末日時在做什麼？有沒有空？可以來拯救嗎？_01.jpg"><p>WorldEnd</p><p class="hidden">x</p></a></td>
+    			<td><a href="Magicbastard.html"><img src="Anime/Anime List/Magicbastard/bzjdmsjsyjjjd.jpg"><p>Bastard Magic</p><p>Instructor</p></a></td>
+    			<td><a href="ReZero.html"><img src="Anime/Anime List/Rezero/rezero.jpg" alt="Re zero"><p>Re:Zero kara Hajimeru</p><p class="hidden">x</p></a></td>
+    		</tr>
+    	</table>
+    	<table class="animerecommended2" id="animerecommended2">
+    		<tr>
+    		    <td><a href="Toradora.html"><img src="Anime/Anime List/Toradora/22128 (1).jpg"><p>Toradora!</p><p class="hidden">x</p></a></td>
+    			<td><a href="Zeronotsukaima.html"><img src="Anime/Anime List/Zero no Tsukaima/20680.jpg"><p>Zero no Tsukaima</p><p class="hidden">x</p></a></td>
+    			<td><a href="GuiltyCrown.html"><img src="Anime/Anime List/GuiltyCrown/Guilty-Crown-276.jpg" alt="GuiltyCrown"><p>Guilty Crown</p><p class="hidden">x</p></a></td>
+    			<td><a href="Anohana.html"><img src="Anime/Anime List/Anohana/oth60229013883515c3e591e47e8bb7b84c47c7666580010.jpg" alt="anohana"><p>Anohana</p><p class="hidden">x</p></a></td>
+    			<td><a href="Worldend.html"><img src="Anime/Anime List/Worldend/末日時在做什麼？有沒有空？可以來拯救嗎？_01.jpg"><p>WorldEnd</p><p class="hidden">x</p></a></td>
+    			<td><a href="Magicbastard.html"><img src="Anime/Anime List/Magicbastard/bzjdmsjsyjjjd.jpg"><p>Bastard Magic</p><p>Instructor</p></a></td>
+    			<td><a href="ReZero.html"><img src="Anime/Anime List/Rezero/rezero.jpg" alt="Re zero"><p>Re:Zero kara</p><p>Hajimeru</p></a></td>
+    		</tr>
+    	</table>
+    </div>
+    <a href="Animelist.html" class="link">Viewmore</a>
+<hr>
+<h1>Lolicon CLub</h1>
+<h2>Are you a lolicon? If you are, then you had come to the right place!<br>This is the page for lolicon with full of loli character, detail, and loli image. For more detail, click <a href="LoliconClub.html" class="link">here!</a></h2>
+</nav>
+
+<footer>
+	<hr>
+	<a>Copyright &copy; Leon 2017</a>
+</footer>
+<nav>
+    <table class="topic2" id="topic2">
+        <tr>
+            <td style="width: 100%;margin: auto;">
+	            <img src="css/potato.jpg">
+            </td>
+        </tr>
+	    <tr>
+	    	<td><hr></td>
+	    </tr>
+	    <tr>
+	    	<td><a>Copyright &copy; Leon 2017</a></td>
+	    </tr>
+	</div>
+</nav>
+</body>
+</html>
