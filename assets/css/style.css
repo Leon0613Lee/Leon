@@ -255,7 +255,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 20px;
 }
 #hero div a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  /*background: rgba(20, 157, 221, 0.95);*/
+  background: #fff;
+  color: #149ddd;
 }
 
 /*--------------------------------------------------------------
@@ -326,23 +328,23 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Facts
+# Favorite
 --------------------------------------------------------------*/
-.facts {
+.favorite {
   padding-bottom: 30px;
 }
-.facts .count-box {
+.favorite .count-box {
   padding: 30px;
   width: 100%;
 }
-.facts .count-box i {
+.favorite .count-box i {
   display: block;
   font-size: 44px;
   color: #149ddd;
   float: left;
   line-height: 0;
 }
-.facts .count-box span {
+.favorite .count-box span {
   font-size: 48px;
   line-height: 40px;
   display: block;
@@ -350,14 +352,14 @@ section {
   color: #050d18;
   margin-left: 60px;
 }
-.facts .count-box p {
+.favorite .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #122f57;
 }
-.facts .count-box a {
+.favorite .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
@@ -366,13 +368,18 @@ section {
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
-.facts .count-box a:hover {
+.favorite .count-box a:hover {
   color: #1f5297;
 }
 
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+.skills .content h3{
+  font-size: 23px;
+  color: #173b6c;
+  padding-bottom: 15px;
+}
 .skills .progress {
   height: 60px;
   display: block;
@@ -404,22 +411,22 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Resume
+# History
 --------------------------------------------------------------*/
-.resume .resume-title {
+.history .history-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #050d18;
 }
-.resume .resume-item {
+.history .history-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #1f5297;
   position: relative;
 }
-.resume .resume-item h4 {
+.history .history-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -428,7 +435,7 @@ section {
   color: #050d18;
   margin-bottom: 10px;
 }
-.resume .resume-item h5 {
+.history .history-item h5 {
   font-size: 16px;
   background: #e4edf9;
   padding: 5px 15px;
@@ -436,16 +443,16 @@ section {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.resume .resume-item ul {
+.history .history-item ul {
   padding-left: 20px;
 }
-.resume .resume-item ul li {
+.history .history-item ul li {
   padding-bottom: 10px;
 }
-.resume .resume-item:last-child {
+.history .history-item:last-child {
   padding-bottom: 0;
 }
-.resume .resume-item::before {
+.history .history-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -731,9 +738,10 @@ section {
   padding-bottom: 130px;
 }
 .contact .info {
-  padding: 30px;
+  padding: 100px;
   background: #fff;
   width: 100%;
+  height: 450px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 .contact .info i {
@@ -765,6 +773,12 @@ section {
 .contact .info .email p {
   padding-top: 5px;
 }
+.contact .info .whatsapp p a, .contact .info .email p a, .contact .info .phone p a{
+  color: #173b6c;
+}
+.contact .info .whatsapp:hover a, .contact .info .email:hover a, .contact .info .phone: hover a{
+  color: #149ddd;
+}
 .contact .info .social-links {
   padding-left: 60px;
 }
@@ -786,7 +800,7 @@ section {
   background: #149ddd;
   color: #fff;
 }
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i, .contact .info .whatsapp:hover i{
   background: #149ddd;
   color: #fff;
 }
